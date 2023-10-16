@@ -8,7 +8,7 @@ export default function Home() {
         <title>Custom Form</title>
         <meta name="description" content="A sample form utilising @hymns-of-web/use-easy-google-form " />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* <link rel="icon" href="/favicon.ico?" /> */}
+        <link rel="icon" href="/favicon.ico?" />
       </Head>
       <main>
         <MyCustomGForm />
