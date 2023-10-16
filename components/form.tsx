@@ -55,7 +55,7 @@ export default function MyCustomGForm() {
     <form onSubmit={submitHandler} ref={ref}>
       <label htmlFor="yaEEp">What is your name?</label>
 
-      <input type="text" id="yaEEp" />
+      <input required type="text" id="yaEEp" />
       <label htmlFor="HwBmK">How would you best describe yourself? Give a short brief about yourself. </label>
 
       <textarea id="HwBmK" />
@@ -73,37 +73,37 @@ export default function MyCustomGForm() {
         <span>Which of the below web browsers are you familiar with or use on a daily basis? </span>
 
         <div>
-          <input type="checkbox" name="qoRVf" id="LFvQz" value="Microsoft Edge" />
+          <input required type="checkbox" name="qoRVf" id="LFvQz" value="Microsoft Edge" />
           <label htmlFor="LFvQz">Microsoft Edge</label>
         </div>
 
         <div>
-          <input type="checkbox" name="qoRVf" id="YjaDQ" value="Google Chrome" />
+          <input required type="checkbox" name="qoRVf" id="YjaDQ" value="Google Chrome" />
           <label htmlFor="YjaDQ">Google Chrome</label>
         </div>
 
         <div>
-          <input type="checkbox" name="qoRVf" id="YCZQV" value="Mozilla Firefox" />
+          <input required type="checkbox" name="qoRVf" id="YCZQV" value="Mozilla Firefox" />
           <label htmlFor="YCZQV">Mozilla Firefox</label>
         </div>
 
         <div>
-          <input type="checkbox" name="qoRVf" id="VDFHR" value="Brave" />
+          <input required type="checkbox" name="qoRVf" id="VDFHR" value="Brave" />
           <label htmlFor="VDFHR">Brave</label>
         </div>
 
         <div>
-          <input type="checkbox" name="qoRVf" id="xhICw" value="Safari" />
+          <input required type="checkbox" name="qoRVf" id="xhICw" value="Safari" />
           <label htmlFor="xhICw">Safari</label>
         </div>
 
         <div>
-          <input type="checkbox" name="qoRVf" id="TKnmm" value="Opera" />
+          <input required type="checkbox" name="qoRVf" id="TKnmm" value="Opera" />
           <label htmlFor="TKnmm">Opera</label>
         </div>
 
         <div>
-          <input type="checkbox" name="qoRVf" id="EAcMi" value="DuckDuckGo" />
+          <input required type="checkbox" name="qoRVf" id="EAcMi" value="DuckDuckGo" />
           <label htmlFor="EAcMi">DuckDuckGo</label>
         </div>
       </div>
@@ -113,11 +113,11 @@ export default function MyCustomGForm() {
         <span>Please use 24 Hour Format</span>
         <div>
           <label htmlFor="iFGve">hour</label>
-          <input type="number" name="hour" id="iFGve" />
+          <input required type="number" name="hour" id="iFGve" />
         </div>
         <div>
           <label htmlFor="xsYwm">minute</label>
-          <input type="number" name="minute" id="xsYwm" />
+          <input required type="number" name="minute" id="xsYwm" />
         </div>
       </div>
 
@@ -126,13 +126,13 @@ export default function MyCustomGForm() {
         <span>Month starting from index 1 (e.g. March will be 3)</span>
 
         <label htmlFor="GNZNz">year</label>
-        <input type="number" name="year" id="GNZNz" />
+        <input required type="number" name="year" id="GNZNz" />
 
         <label htmlFor="DaCFv">month</label>
-        <input type="number" name="month" id="DaCFv" />
+        <input required type="number" name="month" id="DaCFv" />
 
         <label htmlFor="XFbua">day</label>
-        <input type="number" name="day" id="XFbua" />
+        <input required type="number" name="day" id="XFbua" />
       </div>
       <label htmlFor="MsLEJ">Which city is closest to you?</label>
 
