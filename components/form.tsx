@@ -44,8 +44,15 @@ export default function MyCustomGForm() {
       }
     ]
   });
+  const submitHandler = () => {
+    onSubmit();
+    if (ref.current) {
+      (ref.current as HTMLFormElement).reset();
+    }
+    alert("Your respose has been submitted!");
+  };
   return (
-    <form onSubmit={onSubmit} ref={ref}>
+    <form onSubmit={submitHandler} ref={ref}>
       <label htmlFor="yaEEp">What is your name?</label>
 
       <input type="text" id="yaEEp" />
