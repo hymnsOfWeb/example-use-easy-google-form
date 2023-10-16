@@ -1,8 +1,14 @@
-import { FormEventHandler, useRef } from "react";
+import { useCallback, useRef } from "react";
 import { useEasyGoogleForm } from "@hymns-of-web/use-easy-google-form";
 
 export default function MyCustomGForm() {
   const ref = useRef(null);
+  const submitHandler = useCallback(() => {
+    if (ref.current) {
+      (ref.current as HTMLFormElement).reset();
+    }
+    alert("Your respose has been submitted!");
+  }, []);
   const onSubmit = useEasyGoogleForm({
     formRef: ref,
     gFormId: "122D1i9I2K9EMRt9_7h3ZgIWmHZ5JvA6unh7yVlRYUPs",
@@ -39,21 +45,15 @@ export default function MyCustomGForm() {
       },
       {
         entryId: "entry.752938781",
+
         formId: "MsLEJ",
         type: "dropdown"
       }
-    ]
+    ],
+    onSubmitExtra: submitHandler
   });
-  const submitHandler: FormEventHandler = (e) => {
-    e.preventDefault();
-    onSubmit();
-    if (ref.current) {
-      (ref.current as HTMLFormElement).reset();
-    }
-    alert("Your respose has been submitted!");
-  };
   return (
-    <form onSubmit={submitHandler} ref={ref}>
+    <form onSubmit={onSubmit} ref={ref}>
       <label htmlFor="yaEEp">What is your name?</label>
 
       <input required type="text" id="yaEEp" />
