@@ -74,37 +74,37 @@ export default function MyCustomGForm() {
         <span>Which of the below web browsers are you familiar with or use on a daily basis? </span>
 
         <div>
-          <input required type="checkbox" name="qoRVf" id="LFvQz" value="Microsoft Edge" />
+          <input type="checkbox" name="qoRVf" id="LFvQz" value="Microsoft Edge" />
           <label htmlFor="LFvQz">Microsoft Edge</label>
         </div>
 
         <div>
-          <input required type="checkbox" name="qoRVf" id="YjaDQ" value="Google Chrome" />
+          <input type="checkbox" name="qoRVf" id="YjaDQ" value="Google Chrome" />
           <label htmlFor="YjaDQ">Google Chrome</label>
         </div>
 
         <div>
-          <input required type="checkbox" name="qoRVf" id="YCZQV" value="Mozilla Firefox" />
+          <input type="checkbox" name="qoRVf" id="YCZQV" value="Mozilla Firefox" />
           <label htmlFor="YCZQV">Mozilla Firefox</label>
         </div>
 
         <div>
-          <input required type="checkbox" name="qoRVf" id="VDFHR" value="Brave" />
+          <input type="checkbox" name="qoRVf" id="VDFHR" value="Brave" />
           <label htmlFor="VDFHR">Brave</label>
         </div>
 
         <div>
-          <input required type="checkbox" name="qoRVf" id="xhICw" value="Safari" />
+          <input type="checkbox" name="qoRVf" id="xhICw" value="Safari" />
           <label htmlFor="xhICw">Safari</label>
         </div>
 
         <div>
-          <input required type="checkbox" name="qoRVf" id="TKnmm" value="Opera" />
+          <input type="checkbox" name="qoRVf" id="TKnmm" value="Opera" />
           <label htmlFor="TKnmm">Opera</label>
         </div>
 
         <div>
-          <input required type="checkbox" name="qoRVf" id="EAcMi" value="DuckDuckGo" />
+          <input type="checkbox" name="qoRVf" id="EAcMi" value="DuckDuckGo" />
           <label htmlFor="EAcMi">DuckDuckGo</label>
         </div>
       </div>
