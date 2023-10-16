@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { FormEventHandler, useRef } from "react";
 import { useEasyGoogleForm } from "@hymns-of-web/use-easy-google-form";
 
 export default function MyCustomGForm() {
@@ -44,7 +44,8 @@ export default function MyCustomGForm() {
       }
     ]
   });
-  const submitHandler = () => {
+  const submitHandler: FormEventHandler = (e) => {
+    e.preventDefault();
     onSubmit();
     if (ref.current) {
       (ref.current as HTMLFormElement).reset();
@@ -61,7 +62,7 @@ export default function MyCustomGForm() {
       <textarea id="HwBmK" />
       <label htmlFor="cDKMF">How would you best describe yourself in one word.</label>
 
-      <select id="cDKMF">
+      <select id="cDKMF" required>
         <option value="Introvert">Introvert</option>
         <option value="Extrovert">Extrovert</option>
         <option value="Ambivert">Ambivert</option>
@@ -69,7 +70,7 @@ export default function MyCustomGForm() {
       </select>
 
       <div id="qoRVf">
-        {/* I have modified the HTML for this div according to my preference. You can do the same but try not to tinker with the attribute values unless you know what you are doing XD */}
+        {/* I have modified the HTML and structure for this div according to my preference. You can do the same but try not to tinker with the attribute values unless you know what you are doing XD */}
         <span>Which of the below web browsers are you familiar with or use on a daily basis? </span>
 
         <div>
